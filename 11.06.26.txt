@@ -1,0 +1,146 @@
+1.Maximum Difference--
+public class difference {
+    public static void main(String[] args) {
+        int arr[] = {2,3,10,6,4,8,1};
+        int max=arr[1] - arr[0];
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                int diff=arr[j]-arr[i];
+                if(diff > max){
+                    max=diff;
+                }
+            }
+        }
+        System.out.println("Maximum difference is: "+max);
+    }
+}
+
+2.CRUD Program--
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <String> students = new ArrayList<>();
+        students.add("Annu");
+        students.add("Kiruthi");
+        students.add("Rose");
+        System.out.println("original list");
+        System.out.println(students);
+        students.set(1,"Kiruthika");
+        System.out.println("After update");
+        System.out.println(students);
+        students.remove(2);
+        System.out.println("After delete");
+        System.out.println(students);
+    }
+}
+3.Collections.sort()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> list = new ArrayList<> ();
+        list.add(50);
+        list.add(10);
+        list.add(30);
+        Collections.sort(list);
+        System.out.println(list);
+    }
+}
+
+4.Collections.reverse()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> list = new ArrayList<> ();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        Collections.reverse(list);
+        System.out.println(list);
+    }
+}
+
+
+5.Collections.max()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> marks = new ArrayList<> ();
+        marks.add(80);
+        marks.add(95);
+        marks.add(60);
+       int max =  Collections.max(marks);
+        System.out.println(max);
+    }
+}
+
+
+6.Collections.min()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> marks = new ArrayList<> ();
+        marks.add(80);
+        marks.add(95);
+        marks.add(60);
+       int min =  Collections.min(marks);
+        System.out.println(min);
+    }
+}
+
+7.Collections.BinarySearch()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> list = new ArrayList<> ();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        int index = Collections.binarySearch(list,30);
+        System.out.println(index);
+    }
+}
+
+
+8.Collection.frequency()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> list = new ArrayList<> ();
+        list.add(10);
+        list.add(20);
+        list.add(10);
+        list.add(30);
+        list.add(10);
+        int count = Collections.frequency(list,10);
+        System.out.println(count);
+    }
+}
+
+9.Collection.shuffle()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> list = new ArrayList<> ();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        Collections.shuffle(list);
+        System.out.println(list);
+    }
+}
+
+10.Collection.swap()
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList <Integer> list = new ArrayList<> ();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        Collections.swap(list,0,2);
+        System.out.println(list);
+    }
+}
