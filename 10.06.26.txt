@@ -1,0 +1,124 @@
+1.Common element--
+public class commonelement{
+public static void main(String[]args){
+int arr1[]={1,2,3,4,5};
+int arr2[]={4,5,6,7,8};
+System.out.println(x:"Common elements in the two arrays :");
+for(int i=0;i<arr.length;i++){
+for(int j=0;j<arr.length;j++){
+if(arr1[i]==arr2[j]){
+System.out.println(arr1[i]+ " ");
+}
+}
+}
+}
+}
+2.Basics of String  operations--
+public class String{
+String Str="Hello,World!";
+System.out.println(Str);
+String Str1="Hello,Java!";
+String Str1="Hello,Java!";
+String Str3=new String(original:"Hello,Java!");
+System.out.println(Str1==str2);
+System.out.println(Str1==Str3);
+System.out.println(Str1.equals(Str2));
+System.out.println(Str1.equals(Str3));
+System.out.println(Str1.length());
+System.out.println(Str1.CharAt(index:0));
+System.out.println(Str1.substring(0:5));
+System.out.println(Str1.substring(:7));
+System.out.println(Str1.indexOf(ch:'0'));
+System.out.println(Str1.equalsIgnoreCase(anotherString:"hello,java!");
+System.out.println(Str1.toUpperCase());
+System.out.println(Str1.toLowerCase());
+System.out.println(Str1.Contains(S:JAVA));
+3.String Character--
+public class Sample{
+public static void main(String[]args){
+String a="Annu";
+for(int i=a.length()-1;i>=0;i--){
+System.out.println(a.CharAt(i));
+}
+}
+}
+4.Palindrome--
+public class ReverseString{
+public static void main(String[]args){
+String str=5432mE;
+String rev=" ";
+for(int i=str.length()-1;i++){
+rev+=str.CharAt(i);
+}
+System.out.println("Reversed String:"+rev);
+if(str.equals(rev)){
+System.out.println(x:"The String is a Palindrome");
+}else{
+System.out.println(x:"The String is not a Palindrome");
+}
+}
+}
+5.Anagram--
+public class anagram{
+public static void main(String[]args){
+String str1="listen";
+String str2="silent";
+if(areAnagrams(str1,str2)){
+System.out.println(str1+"and"+str2+"are Anagrams.");
+}else{
+System.out.println(str1+"and"+str2+"are not Anagrams.");
+}
+str1=str1.replace(target:" ",replacement" ").toLowerCase();
+str2=str2.replace(target:" ",replacement" ").toLowerCase();
+return false;
+}
+int [] Count1=new int[26];
+int [] Count2=new int[26];
+for(int i=0;i<str1.length();i++){
+Count1[str1.CharAt(i)-'a']++;
+Count2[str2.CharAt(i)-'a']++;
+}
+for(int i=0;i<26;i++){
+if(Counta[i]!=Count2[i]){
+return false;
+}
+}
+return true;
+}
+}
+6.Leaders in array--
+public class LeadersInArray{
+public static void main(String[]args){
+int [] arr={16,17,4,3,5,2};
+for(int i=0;i<arr.length;i++){
+boolean leader=true;
+for(int j=i+1;j<arr.length;j++){
+if(arr[j]>arr[i]){
+leader=false;
+break;
+}
+}
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
